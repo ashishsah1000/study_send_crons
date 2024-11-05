@@ -1,8 +1,17 @@
 {
   "crons": [
     {
-      "path": "/api/hello",
+      "path": "/api/cron/payments",
+      "schedule": "0 4 * * *"
+    },
+    {
+      "path": "/api/cron/payments/stripe",
       "schedule": "0 5 * * *"
+    },
+    {
+      "path": "/api/cron/payments/complete",
+      "schedule": "0 6 * * *"
     }
+
   ]
 }
